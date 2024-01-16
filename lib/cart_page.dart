@@ -26,7 +26,7 @@ class _CartPageState extends State<CartPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Cart'),
+        title: const Text('Cart'),
         centerTitle: true,
       ),
       body: StreamBuilder<List<Model>>(
@@ -60,7 +60,7 @@ class _CartPageState extends State<CartPage> {
                 ],
               );
             } else {
-              return Text('sdfs');
+              return Text('');
             }
           }),
     );

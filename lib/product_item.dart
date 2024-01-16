@@ -25,7 +25,7 @@ class _ItemState extends State<Item> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Color.fromARGB(255, 208, 208, 210),
+        color:const Color.fromARGB(255, 208, 208, 210),
         width: MediaQuery.sizeOf(context).width,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
@@ -38,7 +38,7 @@ class _ItemState extends State<Item> {
                     image:
                         DecorationImage(image: NetworkImage(widget.imageUrl))),
               ),
-              SizedBox(
+             const SizedBox(
                 width: 20,
               ),
               Column(
@@ -46,11 +46,11 @@ class _ItemState extends State<Item> {
                 children: [
                   Text(
                     widget.name,
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
+                    style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
                   ),
                   Text(
                     "${widget.price}\$",
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                    style:const  TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
                   ),
 
 
@@ -61,7 +61,7 @@ class _ItemState extends State<Item> {
                         //   onPressed: widget.onPress, icon: Icon(Icons)),
                       Text("${widget.count}"),
                       IconButton(
-                          onPressed: widget.onPress, icon: Icon(Icons.add))
+                          onPressed: widget.onPress, icon: const Icon(Icons.add))
                     ],
                   ),
                   // IconButton(onPressed: widget.onPress, icon: Icon(Icons.add))
